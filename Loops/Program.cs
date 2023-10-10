@@ -1,6 +1,6 @@
-﻿//Loops are used to perform some operation again and agian until it reaches the specific condition
+﻿
+//Loops are used to perform some operation again and agian until it reaches the specific condition
 //There are 4 types of loops forloop,while,dowhile,nested
-
 
 class Loops
 {
@@ -52,6 +52,7 @@ class Loops
         while (number > 0);
     }
 
+    //using loop inside another loop is called nested loop
     public void NestedLoop()
     {
         for (int i = 0; i < 5; i++)
@@ -62,6 +63,7 @@ class Loops
         }
     }
 
+    //foreach loop loops through the each element in array
     public void ForEachLoop()
     {
         string[] flowerNames = { "Rose", "Jasmin","Lotus" };
@@ -69,6 +71,5 @@ class Loops
         {
             Console.WriteLine(i);
         }
-
     }
 }

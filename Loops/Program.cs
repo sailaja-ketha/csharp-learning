@@ -43,13 +43,13 @@ class Loops
     public void DoWhileLoop()
     {
         Console.WriteLine("DoWhile loop : ");
-        int number = 90;
+        int number = 1;
         do
         {
             Console.WriteLine(number);
-            break;
+            number++;
         }
-        while (number > 0);
+        while (number < 10);
     }
 
     //using loop inside another loop is called nested loop
@@ -66,6 +66,7 @@ class Loops
     //foreach loop loops through the each element in array
     public void ForEachLoop()
     {
+        Console.WriteLine("Foreach loop :  ");
         string[] flowerNames = { "Rose", "Jasmin","Lotus" };
         foreach (string i in flowerNames)
         {

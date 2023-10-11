@@ -1,8 +1,6 @@
 ﻿//Conditional statements
-// statement that can be executed based on a condition is called condtion statement
-//simple if statement
+// statement that can be executed based on a condition is called condition statement
 
-using System;
 
 class ConditionalStatement
 {
@@ -13,6 +11,7 @@ class ConditionalStatement
         ElseIfLadder();
         Switch();
     }
+    //simple if statement
     public static void IfStatementMethod()
     {
         Console.WriteLine("Enter the first letter");
@@ -26,6 +25,7 @@ class ConditionalStatement
         
     }
 
+    //if else
     public static  void IfElseStatement()
     {
         Console.WriteLine("Enter the first letter");
@@ -43,6 +43,7 @@ class ConditionalStatement
 
     }
 
+    //if elseif ladder  
     public static void ElseIfLadder()
     {
         int score = 85;

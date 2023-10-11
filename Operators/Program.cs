@@ -2,7 +2,6 @@
 
 class Operators
 {
-
     public void AirthematicOperators()
     {
         Console.WriteLine("Enter the  first number");
@@ -15,12 +14,16 @@ class Operators
         int subtraction = num1 - num2;
         int multiplication = num1 * num2;
         int division = num1 / num2;
-        int remainder=num1% num2;
+        int remainder=num1 % num2; // modulus
         Console.WriteLine("Sum of the numbers is : " + addition);
         Console.WriteLine("Subtraction Of the Numbers is :" + subtraction);
         Console.WriteLine("Multiplication Of the Numbers is :" + multiplication);
         Console.WriteLine("division Of the Numbers is :" + division);
         Console.WriteLine("Remainder Of the Numbers is :" + remainder);
+        Console.WriteLine("PostIncrement operator : "+ num1++);
+        Console.WriteLine("PreIncrement operator : " + ++num1);
+        Console.WriteLine("Postdecrement operator : " + num1--);
+        Console.WriteLine("Predecrement operator : " + --num1);
     }
 
     public void RelationalOperators()
@@ -88,11 +91,52 @@ class Operators
         }
 
     }
+
+
+    public void BitwiseOperator()
+    {
+        int num1 = 20, num2 = 10, result;
+        result = num1 & num2;
+        Console.WriteLine("Bitwise And if both bits same return 1 or 0 "+ result);
+
+        result = num1 | num2;
+        Console.WriteLine("Bitwise or  if any bit value is 1 returns 1 or 0" + result);
+
+        result = num1 ^ num2;
+        Console.WriteLine("Bitwise Xor if both bit values are same returns 1 or 0" + result);
+
+        result = num1 << 2;
+        Console.WriteLine("Bitwise left shift shifts its left-hand operand left by the number of bits defined by its right-hand operand " + result);
+
+        result = num1 >> 1;
+        Console.WriteLine("Bitwise right shift shifts its left-hand operand right by the number of bits defined by its right-hand operand" + result);  
+        
+
+    }
+
+    public void ShortHandOperator()
+    {
+        int age = 21;
+        //ternary operator this is short hand if else statement
+        string status = age > 18 ? "Eligible for vote" : "Not eligible for vote";
+        Console.WriteLine(status);
+
+        // += 
+        // *=
+
+        // unary operator
+        // -- 
+        // ++
+
+    }
+
     static void Main(string[] args)
     {
         Operators operators= new Operators();
         operators.AirthematicOperators();
         operators.RelationalOperators();
         operators.LogicalOperators();
+        operators.BitwiseOperator();
+        operators.ShortHandOperator();
     }
 }

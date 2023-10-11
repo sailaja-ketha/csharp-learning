@@ -54,7 +54,6 @@ class DataTypes
         public static float convertedPhoneNumber= phoneNumber;
 
 
-
         public void ConvertedDataTypes()
         {
             Console.WriteLine("Converted age is : " + convertedAge);

@@ -15,6 +15,7 @@ class Operators
         int multiplication = num1 * num2;
         int division = num1 / num2;
         int remainder=num1 % num2; // modulus
+
         Console.WriteLine("Sum of the numbers is : " + addition);
         Console.WriteLine("Subtraction Of the Numbers is :" + subtraction);
         Console.WriteLine("Multiplication Of the Numbers is :" + multiplication);
@@ -120,7 +121,7 @@ class Operators
         //ternary operator this is short hand if else statement
         string status = age > 18 ? "Eligible for vote" : "Not eligible for vote";
         Console.WriteLine(status);
-
+       
         // += 
         // *=
 

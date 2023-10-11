@@ -4,7 +4,12 @@
 class DataTypes
 {
     int studentId = 1;
+    byte byteNumber = 255;
+    sbyte sbyteNumber = 30;
+    short shortNumber = 100;
+    ushort ushortNumber = 908;
     long phoneNumber = 9087654321l;
+    ulong DoorNo = 87654333222ul; 
     double weight = 40.58d;
     float height = 2.39f;
     char lastLetterOfName= 'u';

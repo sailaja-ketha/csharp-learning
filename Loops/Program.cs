@@ -66,7 +66,7 @@ class Loops
     //foreach loop loops through the each element in array
     public void ForEachLoop()
     {
-        Console.WriteLine("Foreach loop :  ");
+        Console.WriteLine("Foreach loop : ");
         string[] flowerNames = { "Rose", "Jasmin","Lotus" };
         foreach (string i in flowerNames)
         {

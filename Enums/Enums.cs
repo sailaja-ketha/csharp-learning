@@ -14,13 +14,30 @@ namespace Enums
 
         enum Days
         {
-            Sunday,
+            Sunday=10,
             Monday,
             Tuesday,
             Wednesday,
             Thursday,
             Friday,
             Saturday,
+        }
+
+        enum Vehicle
+        {
+            Car,
+            Bike,
+            Bus,
+            Tractor,
+            Auto      
+        }
+
+        public void DisplayVehicles()
+        {
+            foreach (var data in Enum.GetNames(typeof(Vehicle)))
+            {
+                Console.WriteLine(data + " - " + (int)Enum.Parse(typeof(Vehicle), data));
+            }
         }
         public static void DisplayFruitsData()
         {
@@ -44,7 +61,12 @@ namespace Enums
                 Console.WriteLine("Current day is : " + currentDay);
 
             }
+            Console.WriteLine((int)Days.Sunday);
 
         }
+
+
+
+
     }
 }

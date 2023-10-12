@@ -10,6 +10,7 @@ namespace Enums
             Enums.DisplayFruitsData();
             Enums enums=new Enums();
             enums.DisplayDays();
+            enums.DisplayVehicles();
         }
     }
 }

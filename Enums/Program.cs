@@ -1,4 +1,5 @@
-﻿//An enum is a special class that represents a group of constants
+﻿
+//An enum is a special class that represents a group of constants
 //Use enums when you have values that you know aren't going to change
 namespace Enums
 {
@@ -10,7 +11,7 @@ namespace Enums
             Enums.DisplayFruitsData();
             Enums enums=new Enums();
             enums.DisplayDays();
-            enums.DisplayVehicles();
+            enums.DisplayColors();
         }
     }
 }

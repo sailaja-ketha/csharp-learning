@@ -23,20 +23,21 @@ namespace Enums
             Saturday,
         }
 
-        enum Vehicle
+        enum Color
         {
-            Car,
-            Bike,
-            Bus,
-            Tractor,
-            Auto      
+            Red,
+            Black,
+            Blue,
+            Green,
+            White,
+            Pink
         }
 
-        public void DisplayVehicles()
+        public void DisplayColors()
         {
-            foreach (var data in Enum.GetNames(typeof(Vehicle)))
+            foreach (var data in Enum.GetNames(typeof(Color)))
             {
-                Console.WriteLine(data + " - " + (int)Enum.Parse(typeof(Vehicle), data));
+                Console.WriteLine(data + " - " + (int)Enum.Parse(typeof(Color), data));
             }
         }
         public static void DisplayFruitsData()
@@ -64,9 +65,5 @@ namespace Enums
             Console.WriteLine((int)Days.Sunday);
 
         }
-
-
-
-
     }
 }

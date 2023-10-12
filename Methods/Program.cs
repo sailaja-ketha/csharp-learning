@@ -1,37 +1,31 @@
 ﻿//Methods are nothing but block of code which runs when if it is called 
 //to reuse code define the code once, and use it many times
-
-class Methods
+namespace Methods
 {
-    //static method with parameters
-    public static void CalculatingSum(int a, int b)
+    class Program
     {
-          int sum=a+b;
-          Console.WriteLine("The sum of the numbers is : " + sum);
-    }
+        static void Main(String[] args)
+        {
+            NonStaticClass.AreaOfCircle(2.5);//calling static method in nonstatic class
+            NonStaticClass nonStaticClass = new NonStaticClass();
+            nonStaticClass.GetProduct(); //method without arguments
+            nonStaticClass.FindSpeed(2.3, 20);
 
-    //nonstatic method  without parameters and without return type
-    public void CalculatingMultiplication()
-    {
-        int num1 = 10;
-        int num2 = 20;
-        int result = num1 * num2;
-        Console.WriteLine("The remainder of the numbers is : " + result);
-    }
+            StaticClass.displayDetails();
+            int result=nonStaticClass.FindMaxNumber(20, 25);//method with return type
+            Console.WriteLine("The maximun number is : " + result);
 
-    //method with return type
+            MethodOverLoading methodOverLoading = new MethodOverLoading();
+            methodOverLoading.GetSum(10, 5);//method overloading
+            methodOverLoading.GetSum(20.5, 10.5);//method overloading
+            methodOverLoading.GetSum(50, 10, 20);//method overloading
 
-    public string ReturningName(string name)
-    { 
-        return name;
-    }
+            methodOverLoading.CalculateArea(2, 6);
+            methodOverLoading.CalculateArea(2.5, 6.7);
+            methodOverLoading.CalculateArea(5.5);
+            methodOverLoading.CalculateArea(5.5);
 
-    static void Main(String[] args)
-    {
-        CalculatingSum(10,20);
-        Methods methods = new Methods();
-        methods.CalculatingMultiplication();
-        string name= methods.ReturningName("Sailaja");
-        Console.WriteLine(name);
+
+        }
     }
 }

@@ -11,7 +11,7 @@ namespace Methods
             nonStaticClass.GetProduct(); //method without arguments
             nonStaticClass.FindSpeed(2.3, 20);
 
-            StaticClass.displayDetails();
+            StaticClass.DisplayDetails();
             int result=nonStaticClass.FindMaxNumber(20, 25);//method with return type
             Console.WriteLine("The maximun number is : " + result);
 

@@ -22,7 +22,7 @@ namespace Methods
         }
 
 
-        public void CalculateSpeed(double distance,double time)
+        public void FindSpeed(double distance,double time)
         {
             double speed=distance/time;
             Console.WriteLine("Speed of the car is : " + speed);

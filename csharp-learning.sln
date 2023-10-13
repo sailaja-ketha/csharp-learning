@@ -15,9 +15,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConditionalStatements", "Co
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Methods", "Methods\Methods.csproj", "{A92D5255-9E93-4D03-AEE3-E38CB1CF9748}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Enums", "Enums\Enums.csproj", "{23861ECA-44D2-470E-BE10-85CD97FB20C7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Enums", "Enums\Enums.csproj", "{23861ECA-44D2-470E-BE10-85CD97FB20C7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exceptions", "Exceptions\Exceptions.csproj", "{78FA43C6-92F6-4BC8-9546-372BA0ED36F0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Exceptions", "Exceptions\Exceptions.csproj", "{78FA43C6-92F6-4BC8-9546-372BA0ED36F0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Strings", "Strings\Strings.csproj", "{8EB377A2-62FA-4153-BA47-015A23E573BA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -57,6 +59,10 @@ Global
 		{78FA43C6-92F6-4BC8-9546-372BA0ED36F0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{78FA43C6-92F6-4BC8-9546-372BA0ED36F0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{78FA43C6-92F6-4BC8-9546-372BA0ED36F0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8EB377A2-62FA-4153-BA47-015A23E573BA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8EB377A2-62FA-4153-BA47-015A23E573BA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8EB377A2-62FA-4153-BA47-015A23E573BA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8EB377A2-62FA-4153-BA47-015A23E573BA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

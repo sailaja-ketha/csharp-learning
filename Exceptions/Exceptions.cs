@@ -6,6 +6,8 @@ namespace Exceptions
     {
          string[] colors = { "Red", "Green", "Pink" };
 
+
+        //Accessing the outof range element we got this exception
          public void IndexOutOfRangeException()
          {
             try 
@@ -23,7 +25,8 @@ namespace Exceptions
 
         }
 
-        public void FoormatException()
+        //format exception occurs when we converting string to other datatype
+        public void FormatException()
         {
 
             string input = "abc";
@@ -38,13 +41,14 @@ namespace Exceptions
 
         }
 
+        //when we are trying to attemp with zero we get this exception
         public void DivideByZeroException()
         {
-            int result;
+            
             try
             {
                 int a = 10;
-                result = a / 0;
+                int result = a / 0;
             }
             catch (Exception ex)
             {
@@ -53,6 +57,8 @@ namespace Exceptions
         }
 
 
+
+        //application type exceptions
         public void UserInputException()
         {
             try
@@ -68,6 +74,8 @@ namespace Exceptions
 
         }
 
+
+        //Null reference exception
         public void NullReferenceException()
         {
             string str = null;

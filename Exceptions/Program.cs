@@ -10,7 +10,7 @@ namespace Exceptions
             Console.WriteLine("*****Exception Handling****");
             Exceptions exception = new Exceptions(); 
             exception.IndexOutOfRangeException(); 
-            exception.FoormatException();
+            exception.FormatException();
             exception.DivideByZeroException();
             exception.UserInputException();
             exception.NullReferenceException();

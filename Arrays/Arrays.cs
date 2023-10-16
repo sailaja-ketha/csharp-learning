@@ -4,10 +4,10 @@ namespace Arrays
     
     public class Arrays
     {
-        string[] names = { "Sailaja", "divya", "Supriya", "Leela", "Venu", "Bharathi" };
+       
         public void CreatingArray()
         {
-            
+            string[] names = { "Sailaja", "divya", "Supriya", "Leela", "Venu", "Bharathi" };
             Console.WriteLine("Accssessing array elements using loop");
             foreach (string name in names)
             {
@@ -21,6 +21,7 @@ namespace Arrays
 
         public void ReverseAnArray()
         {
+            string[] names = { "Sailaja", "divya", "Supriya", "Leela", "Venu", "Bharathi" };
             Array.Reverse(names);
             Console.WriteLine("Reverse an array is : ");
             foreach (string name in names)
@@ -31,6 +32,7 @@ namespace Arrays
         
         public void SortingArray()
         {
+            string[] names = { "Sailaja", "divya", "Supriya", "Leela", "Venu", "Bharathi" };
             Array.Sort(names);
             Console.WriteLine("Array elements after sorting :");
             for(int i = 0; i < names.Length; i++)

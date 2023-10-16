@@ -18,8 +18,6 @@ namespace Arrays
             string[] fruits = { "mango","Grapes","papaya","gova","pinapple" };
             arrays.PassingArrayToFunction(fruits);
 
-            arrays.MultiDimesionalArray();
-
 
         }
     }

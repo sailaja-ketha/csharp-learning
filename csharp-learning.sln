@@ -19,9 +19,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Enums", "Enums\Enums.csproj
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Exceptions", "Exceptions\Exceptions.csproj", "{78FA43C6-92F6-4BC8-9546-372BA0ED36F0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Strings", "Strings\Strings.csproj", "{8EB377A2-62FA-4153-BA47-015A23E573BA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Strings", "Strings\Strings.csproj", "{8EB377A2-62FA-4153-BA47-015A23E573BA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Arrays", "Arrays\Arrays.csproj", "{F63EB768-9656-4671-B9CD-5C898389FB87}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Arrays", "Arrays\Arrays.csproj", "{F63EB768-9656-4671-B9CD-5C898389FB87}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Generics", "Generics\Generics.csproj", "{02C3FB67-A741-4F55-9E20-FB1C402E7D21}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -69,6 +71,10 @@ Global
 		{F63EB768-9656-4671-B9CD-5C898389FB87}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F63EB768-9656-4671-B9CD-5C898389FB87}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F63EB768-9656-4671-B9CD-5C898389FB87}.Release|Any CPU.Build.0 = Release|Any CPU
+		{02C3FB67-A741-4F55-9E20-FB1C402E7D21}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{02C3FB67-A741-4F55-9E20-FB1C402E7D21}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{02C3FB67-A741-4F55-9E20-FB1C402E7D21}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{02C3FB67-A741-4F55-9E20-FB1C402E7D21}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

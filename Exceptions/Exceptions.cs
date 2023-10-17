@@ -75,16 +75,38 @@ namespace Exceptions
         }
 
 
+        //null reference exception
+        public void StudentList()
+        {
+            try
+            {
+                List<string> studentList = null;
+
+                studentList.Add("John");
+                Console.WriteLine( studentList);
+            }
+            catch (Exception ex)
+            {
+               Console.WriteLine(ex.Message);
+            }
+        }
+
+
         //Null reference exception
         public void NullReferenceException()
         {
-            string str = null;
+            string str = null; ;
             try
             {
                 int length = str.Length;
             }
             catch (Exception ex)
             {
+                throw;
+                throw ex;
+                //throw;// will throws the original stack exception
+                //throw ex; //will override the stack exception 
+                //In Throw ex, the original stack trace information will get override and you will lose the original exception stack trace
                 Console.WriteLine("NullReferenceException caught: " + ex.Message);
             }
 

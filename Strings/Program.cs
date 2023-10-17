@@ -15,6 +15,7 @@ namespace Strings
             strings.EscapeSequences();
             strings.StringInterpolation();
             strings.CommonStringMethods();
+            strings.JoinMethod();
         }
     }
 

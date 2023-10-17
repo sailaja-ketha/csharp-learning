@@ -17,7 +17,12 @@ namespace Arrays
             arrays.FindMethod();
             string[] fruits = { "mango","Grapes","papaya","gova","pinapple" };
             arrays.PassingArrayToFunction(fruits);
-
+            Console.WriteLine("----------Multidimensional arrays");
+            arrays.MultiDimesionalArray();
+            Console.WriteLine("----------3dimensional arrays");
+            arrays.ThreeDimensionalArray();
+            Console.WriteLine("----------");
+            arrays.JaggedArray();
 
         }
     }

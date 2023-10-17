@@ -21,6 +21,7 @@ namespace Exceptions
             exception.DivideByZeroException();
             exception.UserInputException();
             exception.NullReferenceException();
+            exception.StudentList();
 
         }
     }

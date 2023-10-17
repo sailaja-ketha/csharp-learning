@@ -24,8 +24,8 @@ namespace Strings
             Console.WriteLine("The length of the string is : " + message.Length);
         }
 
-        //Joining two strings by using concat function
-
+        //Joining two strings by using concat function //
+        //Concat() method is used to concatenate multiple string objects // It returns concatenated string
         public void JoinStrings()
         {
             string string1 = "Hello";
@@ -34,12 +34,34 @@ namespace Strings
             Console.WriteLine("The concated string is : " + joinedString);
         }
 
+        //It s used to concatenate all the elements of a string array, using the specified separator between each element
+        public void JoinMethod()
+        {
+            string[] name = { "sailaja" ,"Divya" };
+            string joinedString=string.Join("/" ,name);
+            Console.WriteLine(joinedString);
+        }
 
-        //compare two strings by using equals method
+        //compare two strings by using equals method //it is used to check wether the string instances are equal or not
         public void CompareStrings(string string1, string string2)
         {
-            bool result= string1.Equals(string2);
+            //Equals should be used when either one or both are not objects
+            bool result = string1.Equals(string2);
             Console.WriteLine(result);
+
+            //CompareTo should be used when you are comparing two objects' values
+            //CompareTo method is comparing instance of object with parameter of String object
+
+            string testString = "Test";
+            string anotherString = "Another";
+
+            if (testString.CompareTo(anotherString) == 0) 
+            { 
+                Console.WriteLine("This is Compare method to check the objects are equal or not");
+            }
+            if (testString.Equals(anotherString)) {
+                Console.WriteLine("This is equals method to check the objects values are equal or not");
+            }
 
         }
 

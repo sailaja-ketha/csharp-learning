@@ -12,7 +12,7 @@
 
     public class Student<T>
     {
-      
+      //generic feild
         public T data;
         public Student(T data)
         {

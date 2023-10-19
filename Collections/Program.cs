@@ -1,7 +1,15 @@
 ﻿// Collections
 
 //C# includes specialized classes that store series of values or objects are called collections
-using System.Collections;
+
+//Collection classes are specialized classes for data storage and retrieval
+
+//collection represents group of objects.
+//By the help of collections, we can perform various operations on objects such as
+//storing,retreiving,delete,update,sort
+
+//2 types of collections
+//1.generic collections 2.Nongeneric collections
 
 namespace Collections
 {
@@ -20,6 +28,23 @@ namespace Collections
             NonGenericCollections.Stack();
             Console.WriteLine("****Queue*****");
             NonGenericCollections.Queue();
+
+            Console.WriteLine("--------Generic Collections--------");
+            GenericCollections.List();
+            GenericCollections.Dictionary();
+            GenericCollections.SortedList();
+            GenericCollections.HashSet();
+            GenericCollections.Queue();
+            GenericCollections.Stack();
+            GenericCollections.SortedDictionary();
+            GenericCollections.LinkedList();
+            GenericCollections.SortedSet();
+
+            Console.WriteLine("\n--------Custom Collections--------");
+            CustomCollections.Icollection();
+            CustomCollections.Ienumerable();
+            CustomCollections.Ilist();
+            CustomCollections.Idictionary();
         }
 
     }

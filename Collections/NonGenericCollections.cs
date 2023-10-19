@@ -26,7 +26,7 @@ namespace Collections
             numbers.RemoveAt(2);
 
             // Iterate through the ArrayList.
-            Console.WriteLine("//Elements in the ArrayList://");
+            Console.WriteLine("Elements in the ArrayList:");
             foreach (var number in numbers)
             {
                 Console.WriteLine(number);
@@ -42,7 +42,7 @@ namespace Collections
             arlist.Add(null);
 
             //Use the AddRange(ICollection c) method to add an entire Array,
-            //HashTable, SortedList, ArrayList, BitArray, Queue, and Stack in the ArrayList
+            //HashTable, SortedList, ArrayList, Queue, and Stack in the ArrayList
 
             int[] arr = { 100, 200, 300, 400 };
 
@@ -57,7 +57,7 @@ namespace Collections
             Console.WriteLine("Element at index 0: " + arlist[1]);
 
             //iterate elements
-            Console.WriteLine("//arraylist elements: //");
+            Console.WriteLine("arraylist elements:");
             foreach (var item in arlist)
             {
                 Console.WriteLine(item);
@@ -67,7 +67,7 @@ namespace Collections
 
             arlist.Insert(1, "Sailaja");
 
-            Console.WriteLine("//After inserting//");
+            Console.WriteLine("After inserting : ");
             foreach (var val in arlist)
             {
                 Console.WriteLine(val);
@@ -77,7 +77,7 @@ namespace Collections
             arlist.RemoveAt(4); //Removes element at index 4
             arlist.RemoveRange(0, 2);//Removes two elements starting from 1st item (0 index)
 
-            Console.WriteLine("//After Removing//");
+            Console.WriteLine("After Removing : ");
             foreach (var val in arlist)
             {
                 Console.WriteLine(val);
@@ -103,6 +103,10 @@ namespace Collections
             NonGenericHashTable.Add(3, "Gujarath");
 
             NonGenericHashTable.Add(4, "Vizag");
+            //keys should be unique and values can be duplicate
+            NonGenericHashTable.Add(5, "Vizag");
+
+
 
             //Elements are stored as DictionaryEntry objects
 
@@ -145,17 +149,19 @@ namespace Collections
 
         }
 
+
+        //to get sorted order based on key value
         public static void SortedList()
         {
             SortedList NonGenericSortedList = new SortedList();
 
-            NonGenericSortedList.Add("Magic", "Wings");
+            NonGenericSortedList.Add(1,"MagicWings");
 
-            NonGenericSortedList.Add("Butter", "Nan");
+            NonGenericSortedList.Add(4,"ButterNan");
 
-            NonGenericSortedList.Add("French", "Fries");
+            NonGenericSortedList.Add(3,"FrenchFries");
 
-            NonGenericSortedList.Add("Onion", "Fry");
+            NonGenericSortedList.Add(2,"OnionFry");
 
             foreach (DictionaryEntry d in NonGenericSortedList)
             {
@@ -167,8 +173,8 @@ namespace Collections
 
         public static void Stack()
         {
-            //It's a FIFO (first-in, first-out) list.
-            //Hence it works similarly to the Stack class in generic collections
+            //Values are kept in Stack using LIFO (Last In First Out)
+            
 
             Stack stack = new Stack();
 
@@ -189,6 +195,7 @@ namespace Collections
 
         public static void Queue() 
         {
+            ////It's a FIFO (first-in, first-out) list.
             Queue NonGenericQueue = new Queue();
 
             NonGenericQueue.Enqueue("alphabets");
@@ -203,6 +210,17 @@ namespace Collections
                 Console.WriteLine(item);
 
             }
+
+            NonGenericQueue.Dequeue();
+
+            Console.WriteLine("after dequeue operation");
+            foreach (var item in NonGenericQueue)
+            {
+
+                Console.WriteLine(item);
+
+            }
+
 
         }
     }

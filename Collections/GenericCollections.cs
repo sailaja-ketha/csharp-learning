@@ -10,7 +10,7 @@ namespace Collections
             Console.WriteLine("Working with List");
             List<string> subjects = new List<string>() {"English","Science","Maths","Social"};
             subjects.Add("Hindi");
-            subjects.Add("Sanskrit");
+            subjects.Add("Chemistry");
 
             for(int i = 0; i < subjects.Count; i++)
             {

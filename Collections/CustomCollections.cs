@@ -1,11 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
-
 namespace Collections
 { 
     class CustomCollections
     {
-        //ICollection is an interface that contains size, enumerations, and synchronization methods
+        //ICollection is an interface that contains size and it extends from Ienumerable and we can have extra
+        //functionality like add,delete elements
         //for all nongeneric collections.
         public static void Icollection()
         {
@@ -30,7 +30,9 @@ namespace Collections
         //IEnumerable in C# is an interface that defines one method,
         //GetEnumerator which returns an IEnumerator interface.
         //This allows readonly access to a collection
-        //then a collection that implements IEnumerable can be used with a for-each statement
+        //then a collection that implements IEnumerable can be used with a foreach statement
+        //we cannot edit the elements like adding,deleting
+
         public static void Ienumerable()
         {
             
@@ -61,13 +63,14 @@ namespace Collections
         }
 
         //IList is an interface that represents a collection of objects in an ordered manner.
+        //Ilist extends from Icollection and Ienumerable
         //It allows you to access elements by index, add, remove, or modify items in the collection
+        //We have extra feature like we can add the elements at the middle of the collection
         public static void Ilist()
         {
             
             IList<int> numbers = new List<int>();
 
-           
             numbers.Add(1);
             numbers.Add(2);
             numbers.Add(3);
@@ -84,7 +87,7 @@ namespace Collections
 
             // Check if an element exists in the list
             bool containsNumber = numbers.Contains(42);
-            Console.WriteLine($"Does the list contain 42? {containsNumber}");
+            Console.WriteLine($" Is the list contain 42? {containsNumber}");
 
             // Get the number of elements in the list
             int count = numbers.Count;
@@ -99,6 +102,7 @@ namespace Collections
         }
 
 
+        //Idictionary is an interface
         public static void Idictionary()
         {
             IDictionary<string, int> books = new Dictionary<string, int>();

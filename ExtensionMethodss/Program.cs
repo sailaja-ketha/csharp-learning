@@ -3,7 +3,7 @@
     class Program
     {
 
-        // They allows us to add new functionality to existing types without modifying their source code
+        //They allows us to add new functionality to existing types without modifying their source code
         //ExtensionMethods are additional methods.
         //Extension methods allow you to inject additional methods without modifying,
         //deriving or recompiling the original class, struct or interface

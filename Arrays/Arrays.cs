@@ -1,11 +1,9 @@
 ﻿
 
 namespace Arrays
-{
-    
+{ 
     public class Arrays
     {
-       
         public void CreatingArray()
         {
             string[] names = { "Sailaja", "divya", "Supriya", "Leela", "Venu", "Bharathi" };
@@ -18,9 +16,6 @@ namespace Arrays
             Console.WriteLine("Length of the array is : " + names.Length);
             Console.WriteLine("index of the element" + Array.IndexOf(names,"divya"));
         }
-
-        
-
         public void ReverseAnArray()
         {
             string[] names = { "Sailaja", "divya", "Supriya", "Leela", "Venu", "Bharathi" };

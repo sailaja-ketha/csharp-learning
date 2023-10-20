@@ -19,14 +19,14 @@ namespace ExtensionMethods
             //}
 
             Console.WriteLine(a < b ? b : a);
-           
+
         }
         public static void AddTwoStrings(this string string1, string string2)
         {
             Console.WriteLine("After Joining strings : " + string1 + string2);
         }
 
-        public static void SumOfNumbers(this int num1,int num2)
+        public static void SumOfNumbers(this int num1, int num2)
         {
             Console.WriteLine("Sum is : " + num1 + num2);
         }
@@ -72,7 +72,7 @@ namespace ExtensionMethods
 
         public static void FindPostiveOrNot(this int number)
         {
-            if(number>0)
+            if (number > 0)
             {
                 Console.WriteLine("It is a positive number");
             }
@@ -96,11 +96,13 @@ namespace ExtensionMethods
         public static void ReverseOfString(this string str)
         {
             string reverseString = "";
-            for(int i=str.Length-1; i>=0; i--)
+            for (int i = str.Length - 1; i >= 0; i--)
             {
                 reverseString += str[i];
             }
+            Console.WriteLine(reverseString);
         }
 
     }
 }
+

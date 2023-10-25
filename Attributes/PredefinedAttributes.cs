@@ -118,13 +118,7 @@ namespace Attributes
 
     }
 
-    //The [DllImport] attribute is used to specify that a method is
-    //implemented in an external dynamic-link library (DLL).
-    class ExternalLibrary
-    {
-        [DllImport("user32.dll")]
-        public static extern int MessageBox();
-    }
+    
 
     
 }

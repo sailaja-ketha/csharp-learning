@@ -59,11 +59,9 @@ namespace Attributes
             newInstance.NewMethod();
 
 
-            //serialize
-
-            // Create some sample products
-            Product product1 = new Product { ProductId = 1, Name = "Laptop", Price = 899.99 };
-            Product product2 = new Product { ProductId = 2, Name = "Smartphone", Price = 599.99 };
+            
+            Product product1 = new Product { ProductId = 1, Name = "Laptop", Price = 3456.99 };
+            Product product2 = new Product { ProductId = 2, Name = "Smartphone", Price = 904.99 };
 
             // Serialize and save the products to a file
             Serilize.SerializeAndSave(product1, "product1.dat");
@@ -78,7 +76,7 @@ namespace Attributes
             Console.WriteLine("Loaded Product 2: " + loadedProduct2.Name);
 
             DebugUtility.LogDebugInfo("debug");
-            ExternalLibrary.MessageBox();
+            
         }
 
     }

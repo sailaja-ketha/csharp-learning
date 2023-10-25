@@ -13,7 +13,7 @@ class Variables
     private int _employeeId = 40;
     private string _studentName = "sailaja";
     private double _height = 5.2;
-    char first_letter_of_name = 'S';
+    char firstLetterOfName = 'S';
     private bool _status = true;
 
     //Local variables

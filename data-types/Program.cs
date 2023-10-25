@@ -3,28 +3,33 @@
 
 class DataTypes
 {
-    int studentId = 1;
-    byte byteNumber = 255;
-    sbyte sbyteNumber = 30;
-    short shortNumber = 100;
-    ushort ushortNumber = 908;
-    long phoneNumber = 9087654321l;
-    ulong DoorNo = 87654333222ul; 
-    double weight = 40.58d;
-    float height = 2.39f;
-    char lastLetterOfName= 'u';
-    bool status = true;
-    string name = "Sailu";
+    //for public feilds we use pascalcase
+    public int StudentId = 1;
+    public byte ByteNumber = 255;
+    public sbyte SbyteNumber = 30;
+    public short ShortNumber = 100;
+    public ushort UshortNumber = 908;
+    public long PhoneNumber = 9087654321l;
+    public ulong DoorNo = 87654333222ul;
+    public double Weight = 40.58d;
+    public float Height = 2.39f;
+    public char LastLetterOfName = 'u';
+    public bool Status = true;
+    //for private feilds we use camelcase
+    private string name = "Sailu";
+
+    //if we doesnot create any accessspecifier by default it should be private
+    string animalName = "Monkey";
 
     public void PrintStudentDetails()
     {
         Console.WriteLine("Name of the student is : " + name);
-        Console.WriteLine("Id of the student is : " + studentId);
-        Console.WriteLine("Phonenumber of the student is : " + phoneNumber);
-        Console.WriteLine("last letter of the student is : " + lastLetterOfName);
-        Console.WriteLine("Educational status  is  : " + status);
-        Console.WriteLine("Weight is : " + weight);
-        Console.WriteLine("Height is : " + height);
+        Console.WriteLine("Id of the student is : " + StudentId);
+        Console.WriteLine("Phonenumber of the student is : " + PhoneNumber);
+        Console.WriteLine("last letter of the student is : " + LastLetterOfName);
+        Console.WriteLine("Educational status  is  : " + Status);
+        Console.WriteLine("Weight is : " + Weight);
+        Console.WriteLine("Height is : " + Height);
     }
 
     static void Main(string[] args)

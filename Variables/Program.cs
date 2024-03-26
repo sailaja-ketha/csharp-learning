@@ -29,7 +29,7 @@ class Variables
         Variables variables = new Variables();
         variables.GetEmployeeId( 40);
         Console.WriteLine("Variables: of different data types");
-        Console.WriteLine(variables._employeeId + "\t" + variables._studentName + "\t" + variables. _height + "\t"+ variables.first_letter_of_name + "\t" + variables._status) ;
+        Console.WriteLine(variables._employeeId + "\t" + variables._studentName + "\t" + variables. _height + "\t"+ variables.firstLetterOfName + "\t" + variables._status) ;
         //Console.WriteLine(number);//
     }
 
